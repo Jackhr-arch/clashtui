@@ -71,6 +71,11 @@ jobs:
           merge-multiple: true
           path: ./artifacts
 
+      - name: Tag as Continuous Integration
+        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
+        run: |
+          git tag 'Continuous_Integration'
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
