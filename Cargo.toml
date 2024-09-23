@@ -72,7 +72,7 @@ log4rs = { git = "https://github.com/Jackhr-arch/log4rs" }
 is-root = { git = "https://github.com/Jackhr-arch/is-root" }
 
 [dependencies.clap]
-version = "4.5.17"
+version = "4.5.18"
 default-features = false
 features = ["std", "derive", "help", "usage", "suggestions", "color"]
 
