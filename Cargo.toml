@@ -27,7 +27,7 @@ default = ["tui", "connection-tab"]
 
 [dependencies]
 log = "0.4.22"
-clap_complete = { version = "4.5.26" }
+clap_complete = { version = "4.5.28" }
 anyhow = "1.0.86"
 is-root = { version = "0.1.4" }
 serde = { version = "1.0.210", features = ["derive"] }
