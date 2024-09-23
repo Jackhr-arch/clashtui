@@ -39,7 +39,7 @@ minreq = { version = "2.12.0", features = [
 serde_json = "1.0.128"
 serde_yml = "0.0.12"
 futures-util = { version = "0.3.30", default-features = false }
-thiserror = "1.0.63"
+thiserror = "1.0.64"
 bitflags = { version = "2.6.0", optional = true }
 
 [dependencies.tokio]
