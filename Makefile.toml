@@ -43,8 +43,8 @@ script_runner = "@shell"
 ignore_errors = true
 script = ["rm -r artifacts"]
 
-[tasks.build_deb]
-install_crate = "cargo-deb"
+[tasks.build_deb.linux]
+# install_crate = "cargo-deb"
 dependencies = ["create-artifacts"]
 script = """
     cargo deb --locked 
@@ -96,6 +96,7 @@ script = '''
 '''
 
 [tasks.upx.windows]
+script_runner = "@shell"
 script = '''
     curl -OL https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-win64.zip
     tar -xf upx-4.2.4-win64.zip
