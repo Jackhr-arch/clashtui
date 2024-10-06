@@ -40,7 +40,7 @@ jobs:
 
       - uses: taiki-e/install-action@v2
         with:
-          tool: cross, cargo-make 
+          tool: cross, cargo-make, cargo-deb
 
       - name: Test
         run: |
