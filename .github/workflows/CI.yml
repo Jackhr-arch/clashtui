@@ -38,9 +38,10 @@ jobs:
             ci-${{ runner.os }}-${{ hashFiles('./Cargo.lock') }}
             ci-${{ runner.os }}-
 
+      - uses: davidB/rust-cargo-make@v1
+
       - name: Test
         run: |
-          cargo install --debug cargo-make
           cargo make ci
 
       - name: Build
