@@ -38,7 +38,9 @@ jobs:
             ci-${{ runner.os }}-${{ hashFiles('./Cargo.lock') }}
             ci-${{ runner.os }}-
 
-      - uses: davidB/rust-cargo-make@v1
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cross, cargo-make 
 
       - name: Test
         run: |
