@@ -59,7 +59,7 @@ script = """
 [tasks.arm64]
 # use for build arm64 in docker
 # env = { CROSS_CONTAINER_IN_CONTAINER = true }
-install_crate = "cross"
+# install_crate = "cross"
 dependencies = ["create-artifacts"]
 script = '''
     cross build --target=aarch64-unknown-linux-gnu
@@ -80,6 +80,7 @@ script = '''
 
 [tasks.upx.linux]
 script = '''
+    ls artifacts
     chmod +x artifacts/*
     curl -OL https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-amd64_linux.tar.xz
     tar -xf upx-4.2.4-amd64_linux.tar.xz
