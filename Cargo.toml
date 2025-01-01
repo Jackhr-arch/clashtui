@@ -31,7 +31,7 @@ log = "0.4.22"
 clap_complete = "4.5.26"
 anyhow = "1.0.86"
 is-root = { version = "0.1.4" }
-serde = { version = "1.0.210", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
 minreq = { version = "2.12.0", features = [
   "proxy",
   "https",
