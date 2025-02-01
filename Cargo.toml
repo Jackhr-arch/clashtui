@@ -38,7 +38,7 @@ clap_complete = "4.5.26"
 anyhow = "1.0.86"
 is-root = { version = "0.1.4" }
 serde = { version = "1.0.210", features = ["derive"] }
-minreq = { version = "2.12.0", features = [
+minreq = { version = "2.13.2", features = [
   "proxy",
   "https",
   "json-using-serde",
