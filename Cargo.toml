@@ -75,7 +75,7 @@ features = ["crossterm"]
 optional = true
 
 [dependencies.clap]
-version = "4.5.17"
+version = "4.5.34"
 default-features = false
 features = ["std", "derive", "help", "usage", "suggestions", "color"]
 
