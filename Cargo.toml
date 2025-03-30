@@ -34,7 +34,7 @@ default = ["tui", "connection-tab", "template", "migration_v0_2_3"]
 
 
 [dependencies]
-log = "0.4.22"
+log = "0.4.27"
 clap_complete = "4.5.26"
 anyhow = "1.0.86"
 is-root = { version = "0.1.4" }
